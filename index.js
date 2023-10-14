@@ -27,4 +27,4 @@ app.use((err,req,res,next)=>{
     res.status(statusCode).json({message:err.message})
 })
 
-app.listen(process.env.PORT,()=> console.log(`server is running on port ${process.env.PORT}`))
+app.listen(process.env.PORT||3000,()=> console.log(`server is running on port ${process.env.PORT}`))
